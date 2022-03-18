@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="webproject.web.dao.BookDao">
+<mapper namespace="webproject.web.BookDao">
 
   <resultMap type="book" id="bookMap">
     <id column="book_no" property="no"/>

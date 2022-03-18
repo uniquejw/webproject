@@ -15,13 +15,13 @@ public interface TodoDao {
   List<Todo> findAll();
 
   int insert(Todo todo);
-
+  
   Todo findByNo(int no);
 
   int update(Todo todo);
-
+  
   int updateDone(@Param("no") int no, @Param("done") boolean done);
-
+  
   int delete(int no);
 }
 
