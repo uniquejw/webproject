@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.eomcs.mylist.dao.TodoDao">
+<mapper namespace="webproject.web.dao.TodoDao">
 
   <resultMap type="todo" id="todoMap">
     <id column="todo_no" property="no"/>
