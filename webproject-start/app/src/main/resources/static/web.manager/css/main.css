@@ -1,0 +1,49 @@
+header {
+	height: 10vh;
+}
+
+body {
+	margin-top: 150px;
+	background-color: rgb(192, 192, 192);
+	height: auto;
+}
+
+footer {
+	height: 10vh;
+}
+
+.m-container {
+	
+}
+
+.m-container .main {
+	
+}
+
+.m-container .main .left {
+	width: 25vw;
+	float: left;
+}
+
+.m-container>.main>.left>.sidemenu {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	text-align: center
+}
+
+.logo {
+	height: 60px;
+	width: 60px;
+}
+
+.m-container .main .content {
+	float: left;
+	width: 50vw;
+	display: inline-block;
+}
+
+.m-container .main .right {
+	width: 25vw;
+	float: left;
+}

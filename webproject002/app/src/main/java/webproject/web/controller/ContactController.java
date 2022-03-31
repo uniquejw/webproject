@@ -22,7 +22,7 @@ public class ContactController {
     for (Contact contact : contacts) {
       contact.setTels(contactDao.findTelByContactNo(contact.getNo()));
     }
-    return contacts;
+    return "test";
   }
 
   @RequestMapping("/contact/add")
