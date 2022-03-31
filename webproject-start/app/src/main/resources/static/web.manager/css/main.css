@@ -3,13 +3,13 @@ header {
 }
 
 body {
-	margin-top: 150px;
 	background-color: rgb(192, 192, 192);
 	height: auto;
 }
 
-footer {
-	height: 10vh;
+a {
+	color: black;
+	text-decoration: none;
 }
 
 .m-container {
@@ -17,7 +17,6 @@ footer {
 }
 
 .m-container .main {
-	
 }
 
 .m-container .main .left {
@@ -25,11 +24,27 @@ footer {
 	float: left;
 }
 
-.m-container>.main>.left>.sidemenu {
+.m-container .main .right {
+	width: 35vw;
+	float: right;
+}
+
+.m-container>.main>.left>.box {
+	height: 700px;
+	width: 15vw;
+	text-align: center
+}
+
+.m-container>.main>.left>.box>.sidemenu {
+	margin-top: 50px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 300px;
+	width: 12vw;
 	text-align: center
+}
+
+.m-container>.main>.left>.box>.sidemenu>a {
+	display: inline-block;
 }
 
 .logo {
@@ -38,12 +53,65 @@ footer {
 }
 
 .m-container .main .content {
+	margin-top: 150px;
+	margin-left: 200px;
 	float: left;
-	width: 50vw;
+	width: 30vw;
 	display: inline-block;
+	text-align: center;
 }
 
-.m-container .main .right {
-	width: 25vw;
-	float: left;
+.m-container .main .content .status {
+	display: flex;
+	height: 30vh;
+}
+
+.m-container .main .content .statusbox {
+	display: flex;
+	height: 30vh;
+}
+
+.box {
+	display: flex;
+	height: 30vh;
+	width: 40vw;
+}
+
+.inbox {
+	height: 20vh;
+	width: 50vw;
+}
+
+.profile {
+	flex: 1;
+	display: flex;
+	margin: 10px;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.box-bottom {
+	flex: 1;
+	margin: 10px;
+	height: 150px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.box-card {
+	flex: 1;
+	margin: 10px;
+	height: 200px;
+	width: 200px;
+	text-align: center;
+}
+
+.card-img {
+	display: block;
+	margin:0 auto;
+	height: 100px;
+	width: 100px;
 }
