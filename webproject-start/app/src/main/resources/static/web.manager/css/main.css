@@ -30,7 +30,7 @@ a {
 }
 
 .m-container>.main>.left>.box {
-	height: 700px;
+	height: 1200px;
 	width: 15vw;
 	text-align: center
 }
@@ -54,7 +54,6 @@ a {
 
 .m-container .main .content {
 	margin-top: 150px;
-	margin-left: 200px;
 	float: left;
 	width: 30vw;
 	display: inline-block;
@@ -63,23 +62,24 @@ a {
 
 .m-container .main .content .status {
 	display: flex;
-	height: 30vh;
+	height: 35vh;
 }
 
 .m-container .main .content .statusbox {
 	display: flex;
-	height: 30vh;
+	height: 35vh;
 }
 
 .box {
 	display: flex;
 	height: 30vh;
 	width: 40vw;
+	
 }
 
 .inbox {
-	height: 20vh;
-	width: 50vw;
+	height: 30vh;
+	width: 1200px;
 }
 
 .profile {
@@ -104,14 +104,14 @@ a {
 .box-card {
 	flex: 1;
 	margin: 10px;
-	height: 200px;
-	width: 200px;
+	height: 400px;
+	width: 400px;
 	text-align: center;
 }
 
 .card-img {
 	display: block;
 	margin:0 auto;
-	height: 100px;
-	width: 100px;
+	height: 300px;
+	width: 300px;
 }
