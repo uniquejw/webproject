@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>연락처</title>
+</head>
+<body>
+	<h1>연락처</h1>
+	<a href="form.html">새 연락처</a>
+	<table id="x-contact-table" border="1">
+		<thead>
+			<tr>
+				<th>번호</th>
+				<th>이름</th>
+				<th>이메일</th>
+				<th>전화</th>
+				<th>회사</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+
+	<script id="tr-templete" type="text/x-handlerbars-template">
+{{#each this}}
+<tr>
+<td>{{no}}</td>
+<td><a href="view.html?no={{no}}">{{name}}</a></td>
+<td>{{eamil}}</td>
+<td>{{tels.[0].tel}}</td>
+<td>{{company}}</td>
+</tr>
+{{/each}}
+</script>
+
+	<script src="../node_modules/handlebars/dist/handlebars.min.js"></script>
+	<script type="text/javascript">
+		var tbody = document.querySelector("#x-contact-table tbody")
+		var trTemplate = document.querySelector("#tr-template");
+		var htmlGenerator = Handlebars.compile(trTemplate.innerHTML);
+
+		fetch("/contact/list").then(function(response) {
+			return response.json();
+		}).then(function(contacts) {
+			tbody.innerHTML = htmlGenerator(contacts);
+		});
+	</script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
